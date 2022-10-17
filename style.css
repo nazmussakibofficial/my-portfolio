@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@700&family=Teko&display=swap');
+
+:root {
+    --bg-color: grey;
+    --g-selected-text: #14fe17;
+    --g-non-selected-text: #107c12;
+    --b-selected-text: #14cffe;
+    --b-non-selected-text: #1789b6;
+    --w-selected-text: #ffffff;
+    --w-non-selected-text: #ff00c8;
+
+    --y-selected-text: #c02942;
+    --y-non-selected-text: #ffffff;
+    --content-bg-color: rgba(10, 10, 10, .3);
+    --navbar-bg-color: rgba(10, 10, 10, .8);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: 'Teko', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--y-non-selected-text);
+    overflow: hidden;
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 15000;
+    top: 0;
+    background-size: 4px;
+    pointer-events: none;
+    background:
+        repeating-linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.4) 1px,
+            transparent 1px,
+            transparent 2px);
+    opacity: .4;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* LOGO */
+
+#logo-text {
+    height: 70px;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 1.7em;
+    font-weight: 900;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #c02942, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animatelogo 3s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animatelogo {
+    0% {
+        background-position: -500%;
+    }
+
+    100% {
+        background-position: 500%;
+    }
+}
+
+/* NAVIGATION  */
+.nav-bar ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.nav-bar li {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 100px);
+    justify-content: center;
+    justify-items: center;
+    padding: 0px 40px;
+    margin: 15px 0px;
+    font-size: 40px;
+    color: var(--y-non-selected-text);
+    cursor: pointer;
+
+}
+
+.nav-bar li:hover {
+    color: var(--y-selected-text);
+
+}
+
+/* Home */
+
+.content-card {
+
+    border-left: 3px solid var(--y-selected-text);
+    border-right: 3px solid var(--y-selected-text);
+    width: 70%;
+    position: absolute;
+    left: 17%;
+    top: 150px;
+}
+
+.content-card::before {
+    content: ' ';
+    position: absolute;
+    display: block;
+    z-index: 100;
+    background: var(--y-selected-text);
+    top: 0px;
+    left: 0px;
+}
+
+.content-card::after {
+    content: ' ';
+    position: absolute;
+    display: block;
+    z-index: 100;
+    background: var(--y-selected-text);
+    top: 0px;
+    right: 0px;
+}
+
+.greetings-title {
+    padding: 160px 10px 160px 60px;
+    position: relative;
+    line-height: 70px;
+    text-align: left;
+    font-size: 60px;
+    letter-spacing: 2px;
+    z-index: 1000;
+}
+
+.greetings-title span {
+    color: var(--y-selected-text);
+}
+
+.greetings {
+    background: var(--content-bg-color);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.greetings::before {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+}
+
+
+
+/* SKILLS  */
+
+.skills-content-card {
+    border-left: 3px solid var(--y-selected-text);
+    border-right: 3px solid var(--y-selected-text);
+    width: 70%;
+    position: absolute;
+    left: 17%;
+    top: 150px;
+}
+
+.skills-content-card::before {
+    content: ' ';
+    position: absolute;
+    display: block;
+    z-index: 100;
+    background: var(--y-selected-text);
+    top: 0px;
+    left: 0px;
+}
+
+.skills-content-card::after {
+
+    content: ' ';
+    position: absolute;
+    display: block;
+    z-index: 100;
+    background: var(--y-selected-text);
+    top: 0px;
+    right: 0px;
+}
+
+.skills-content {
+    background: var(--content-bg-color);
+    padding: 160px 0px 160px 50px;
+    letter-spacing: 1px;
+}
+
+.skills-title h1 {
+    font-size: 60px;
+}
+
+.skills-text {
+    font-size: 25px;
+}
