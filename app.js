@@ -2,7 +2,7 @@ let homeContent = `<div class="content-wrapper">
 <section class="home ">
     <div class="greetings content-card">
         <div class="greetings-title">
-            <h1 class="t1"> <span>Welcome,</span> </h1>
+            <h1 class="t1"> <span>HI,</span> </h1>
             <h1 class="t2"> My Name is <span>Nazmus Sakib</span> </h1>
             <h1 class="t3"> I am a <span>Front End Developer</span> </h1>
         </div>

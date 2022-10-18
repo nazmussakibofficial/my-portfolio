@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@700&family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
 
 :root {
     --bg-color: grey;
@@ -12,7 +12,7 @@
     --y-selected-text: #c02942;
     --y-non-selected-text: #ffffff;
     --content-bg-color: rgba(10, 10, 10, .3);
-    --navbar-bg-color: rgba(10, 10, 10, .8);
+    --content-bg-color2: rgba(10, 10, 10, .8);
 }
 
 * {
@@ -213,7 +213,7 @@ a {
 }
 
 .skills-content {
-    background: var(--content-bg-color);
+    background: var(--content-bg-color2);
     padding: 160px 0px 160px 50px;
     letter-spacing: 1px;
 }
