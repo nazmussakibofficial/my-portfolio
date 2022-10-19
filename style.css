@@ -212,7 +212,7 @@ a {
 }
 
 .about-section {
-    background: url(./gifs/about.gif);
+    background: var(--content-bg-color);
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 0;
