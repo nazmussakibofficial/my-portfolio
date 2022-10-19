@@ -5,6 +5,7 @@ let homeContent = `<div class="content-wrapper">
             <h1 class="t1"> <span>HI,</span> </h1>
             <h1 class="t2"> My Name is <span>Nazmus Sakib</span> </h1>
             <h1 class="t3"> I am a <span>Front End Developer</span> </h1>
+            <p>if you want to contact me, click on the mail icon: <a href="mailto:nazmussakibofficial19@gmail.com"><span><i class="fas fa-envelope"></i></span></a></p>
         </div>
 
     </div>
