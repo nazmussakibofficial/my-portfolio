@@ -11,6 +11,34 @@ let homeContent = `<div class="content-wrapper">
 
 </section>`;
 
+let aboutContent = `<section class="about-wrapper">
+<div class="about-section about-content-card">
+  <div class="about-content">
+    <div class="about-title">
+      <h1>About</h1>
+    </div>
+    <div class="about-text">
+      <p>
+        I am Nazmus Sakib.<br />
+        I became interesed in programming after I took some programming courses in my university. <br />
+        So I began with HTML<i class="fab fa-html5"></i> and CSS<i class="fab fa-css3-alt"></i>. <br />
+        After I graduated in 2022, I set a goal which was to become a full-stack devloper.<br />
+        That same year, 2022, around May, I enrolled in a complete web development course. The course is still continuing. <br />
+        So far the course taught me about front end development and now I am learning some basics about back end development. <br />
+        And by the end of the course, I hope to achieve the training I needed to reach my goal. <br />
+      </p>
+    </div>
+  </div>
+</div>
+</section>`;
+
+let workContent = `
+<div class="work-content-card">
+        <h1 class="t1">Build in Progress</h1>
+        </div>
+`;
+
+
 let skillsContent = `<div class="skills-section">
 <div class="skills-content skills-content-card">
     <div class="skills-title">
