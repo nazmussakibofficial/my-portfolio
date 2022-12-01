@@ -49,7 +49,7 @@ let workContent = `
             </span>
             </h1>
             <a href="https://the-story-keeper.web.app/" target="_blank">
-            <img class="workPic tooltip" src=""> </a>
+            <img class="workPic tooltip" src="https://raw.githubusercontent.com/nazmussakibofficial/my-portfolio/main/images/img1.PNG"> </a>
             <a href="https://github.com/nazmussakibofficial/the-story-keeper-client">  
             <p class="button-project btn-github ">GITHUB CLIENT</p></a>
             <a href="https://github.com/nazmussakibofficial/the-story-keeper-server">
@@ -67,7 +67,7 @@ let workContent = `
             </span>
             </h1>
             <a href="https://gallery-of-memories.web.app/" target="_blank">
-            <img class="workPic tooltip" src=""> </a>
+            <img class="workPic tooltip" src="https://raw.githubusercontent.com/nazmussakibofficial/my-portfolio/main/images/img2.PNG"> </a>
             <a href="https://github.com/nazmussakibofficial/gallery-of-memories-client">  
             <p class="button-project btn-github ">GITHUB CLIENT</p></a>
             <a href="https://github.com/nazmussakibofficial/gallery-of-memories-server">
@@ -84,7 +84,7 @@ let workContent = `
             </span>
             </h1>
             <a href="https://programoholic-981e6.web.app/" target="_blank">
-            <img class="workPic tooltip" src=""> </a>
+            <img class="workPic tooltip" src="https://raw.githubusercontent.com/nazmussakibofficial/my-portfolio/main/images/img3.PNG"> </a>
             <a href="https://github.com/nazmussakibofficial/programoholic-client">  
             <p class="button-project btn-github ">GITHUB CLIENT</p></a>
             <a href="https://github.com/nazmussakibofficial/programoholic-server">
