@@ -22,8 +22,8 @@ let aboutContent = `<section class="about-wrapper">
       <p>
         I am Nazmus Sakib.<br />
         I became interesed in programming after I took some programming courses in my university. <br />
-        So I began with HTML<i class="fab fa-html5"></i> and CSS<i class="fab fa-css3-alt"></i>. <br />
-        After I graduated in 2022, I set a goal which was to become a full-stack devloper.<br />
+        So I began with HTML<i class="fab fa-html5"></i> and CSS<i class="fab fa-css3-alt"></i> in 2018. <br />
+        After I graduated in 2022, I set an aim of becoming an experienced programmer.<br />
         That same year, 2022, around May, I enrolled in a complete web development course. The course is still continuing. <br />
         So far the course taught me about front end development and now I am learning some basics about back end development. <br />
         And by the end of the course, I hope to achieve the training I needed to reach my goal. <br />
@@ -34,9 +34,69 @@ let aboutContent = `<section class="about-wrapper">
 </section>`;
 
 let workContent = `
-<div class="work-content-card">
-        <h1 class="t1">Build in Progress</h1>
+
+<div class="work-content work-content-card">
+    <div class="work-gallery">
+
+        <div class="work-project-card">
+            <h1 class="work-project-card-title tooltip ">
+            The Story Keeper  <span class="tooltiptext">
+            Project idea: 
+            <br>-Stripe Payment gateway
+            <br>-Dashboards
+            <br>-Dynamic Page Titles
+            
+            </span>
+            </h1>
+            <a href="https://the-story-keeper.web.app/" target="_blank">
+            <img class="workPic tooltip" src=""> </a>
+            <a href="https://github.com/nazmussakibofficial/the-story-keeper-client">  
+            <p class="button-project btn-github ">GITHUB CLIENT</p></a>
+            <a href="https://github.com/nazmussakibofficial/the-story-keeper-server">
+            <p class="button-project btn-github ">GITHUB SERVER</p></a>
         </div>
+
+        <div class="work-project-card">
+            <h1 class="work-project-card-title tooltip ">
+            Gallery of Memories  <span class="tooltiptext">
+            Project idea: 
+            <br>-Adding and Deleting Comments
+            <br>-JWT Tokens
+            <br>-Custom Services
+            
+            </span>
+            </h1>
+            <a href="https://gallery-of-memories.web.app/" target="_blank">
+            <img class="workPic tooltip" src=""> </a>
+            <a href="https://github.com/nazmussakibofficial/gallery-of-memories-client">  
+            <p class="button-project btn-github ">GITHUB CLIENT</p></a>
+            <a href="https://github.com/nazmussakibofficial/gallery-of-memories-server">
+            <p class="button-project btn-github ">GITHUB SERVER</p></a>
+        </div>
+
+        <div class="work-project-card">
+            <h1 class="work-project-card-title tooltip ">
+            Programoholic  <span class="tooltiptext">
+            Project idea: 
+            <br>-Firebase
+            <br>-Theme Toogler
+            
+            </span>
+            </h1>
+            <a href="https://programoholic-981e6.web.app/" target="_blank">
+            <img class="workPic tooltip" src=""> </a>
+            <a href="https://github.com/nazmussakibofficial/programoholic-client">  
+            <p class="button-project btn-github ">GITHUB CLIENT</p></a>
+            <a href="https://github.com/nazmussakibofficial/programoholic-server">
+            <p class="button-project btn-github ">GITHUB SERVER</p></a>
+        </div>
+
+        
+        
+    </div>
+</div>
+
+
 `;
 
 
@@ -51,9 +111,9 @@ let skillsContent = `<div class="skills-section">
         <p>I also use:</p>
         <p>- Node.js , Express ,<br/>
          - MongoDB, Firebase</p>
-        <p>- React-Router</p>
+        <p>- Tailwind, Bootstrap</p>
 
-        <p>- PhotoShop, AfterEffects</p>
+        <p>- PhotoShop, Github, Figma</p>
 
     </div>
 </div>

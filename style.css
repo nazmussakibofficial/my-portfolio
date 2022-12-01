@@ -244,12 +244,66 @@ a {
 /* WORK  */
 
 .work-content-card {
-    border-left: 3px solid var(--content-bg-color2);
-    border-right: 3px solid var(--content-bg-color2);
+    border-left: 3px solid var(--y-selected-text);
+    border-right: 3px solid var(--y-selected-text);
     width: 70%;
     text-align: center;
     margin: 0 auto;
     margin-top: 130px;
+}
+
+.work-content-card::after {
+    content: ' ';
+    position: absolute;
+    display: block;
+    z-index: 100;
+    background: var(--y-selected-text);
+    top: 0px;
+    right: 0px;
+}
+
+.work-gallery {
+    background: var(--content-bg-color2);
+    padding: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    justify-content: space-evenly;
+}
+
+.work-project-card {
+    display: grid;
+
+}
+
+.work-project-card-title {
+    font-size: 30px;
+    padding: 20px 0 10px 0;
+    letter-spacing: 1px;
+    font-weight: 100;
+    color: white;
+    cursor: pointer;
+}
+
+.workPic {
+    width: 300px;
+    height: 150px;
+}
+
+
+.button-project {
+    border: 1px solid var(--y-selected-text);
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 40px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: var(--y-non-selected-text);
+}
+
+.button-project:hover {
+    background-color: var(--y-selected-text);
+    color: var(--y-non-selected-text);
+    transition: all 1.5s;
 }
 
 /* SKILLS  */
@@ -296,4 +350,47 @@ a {
 
 .skills-text {
     font-size: 25px;
+}
+
+/* TOOLTIP */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: var(--content-bg-color2);
+    color: var(--w-selected-text);
+    text-align: center;
+    border-top: 2px solid var(--y-selected-text);
+    border-bottom: 2px solid var(--y-selected-text);
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 80px;
+    left: 100px;
+    margin-left: -60px;
+    font-size: 17px;
+
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }
