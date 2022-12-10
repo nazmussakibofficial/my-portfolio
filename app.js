@@ -5,7 +5,7 @@ let homeContent = `<div class="content-wrapper">
             <h1 class="t1"> <span>HI,</span> </h1>
             <h1 class="t2"> My Name is <span>Nazmus Sakib</span> </h1>
             <h1 class="t3"> I am a <span>Front End Developer</span> </h1>
-            <p>if you want to contact me, click on the mail icon: <a href="mailto:nazmussakibofficial19@gmail.com"><span><i class="fas fa-envelope"></i></span></a></p>
+            <p>My resume: <a target="_blank" href="https://drive.google.com/file/d/1QLEWyiIBUlX9-OU8ZkEM_vLCDhDbPcWf/view?usp=sharing"><span><i class="fa-solid fa-id-badge"></i></span></a></p>
         </div>
 
     </div>
@@ -18,23 +18,50 @@ let aboutContent = `<section class="about-wrapper">
     <div class="about-title">
       <h1>About</h1>
     </div>
+    <img style="width: 200px;" src="https://avatars.githubusercontent.com/u/101580272?v=4" alt=""></img>
     <div class="about-text">
       <p>
-        I am Nazmus Sakib.<br />
+        Greetings, I am Nazmus Sakib.<br />
         I became interesed in programming after I took some programming courses in my university. <br />
         So I began with HTML<i class="fab fa-html5"></i> and CSS<i class="fab fa-css3-alt"></i> in 2018. <br />
-        After I graduated in 2022, I set an aim of becoming an experienced programmer.<br />
-        That same year, 2022, around May, I enrolled in a complete web development course. The course is still continuing. <br />
-        So far the course taught me about front end development and now I am learning some basics about back end development. <br />
-        And by the end of the course, I hope to achieve the training I needed to reach my goal. <br />
+        After I graduated in 2021, I set an aim of becoming an experienced programmer.<br />
+        Currently I am learning React.js, Next.js, MongoDB, Firebase, Express.js and also a bit of typescript. <br />
       </p>
+    </div>
+</div>
+</section>`;
+
+let contactContent = `<section class="about-wrapper">
+<div class="about-section about-content-card">
+  <div class="about-content">
+    <div class="about-title">
+      <h1>Contact Me</h1>
+    </div>
+    <div class="center">
+        <h1>Social Links : <a target="_blank" href="https://www.linkedin.com/in/nazmus-sakib-b71682234/"><i style="color: #c02942;" class="fa-brands fa-linkedin"></i></a></h1>
+        <h1>Send me a message</h1>
+        <form action="https://formsubmit.co/nazmussakibofficial19@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New Email from your portfolio!">
+            <div class="inputbox">
+                <input type="text" name="name" required="required">
+                <span>Name</span>
+            </div>
+            <div class="inputbox">
+                <input type="email" name="email" required="required">
+                <span>Email</span>
+            </div>
+            <div class="inputbox">
+                <input type="text" name="message" required="required">
+                <span>Message</span>
+            </div>
+            <button type="submit">Send</button>
+        </form>
     </div>
   </div>
 </div>
 </section>`;
 
 let workContent = `
-
 <div class="work-content work-content-card">
     <div class="work-gallery">
 
@@ -106,15 +133,39 @@ let skillsContent = `<div class="skills-section">
         <h1>Skills</h1>
     </div>
     <div class="skills-text">
-        <p> I am mainly skilled in Front End Development</p>
-        <p> using<br/>- HTML, CSS, JavaScript, React</p>
-        <p>I also use:</p>
-        <p>- Node.js , Express ,<br/>
-         - MongoDB, Firebase</p>
-        <p>- Tailwind, Bootstrap</p>
-
-        <p>- PhotoShop, Github, Figma</p>
-
+        <p> I am mainly skilled in Front End Development using </p>
+        <div class="skill-with-bar">
+            <p>- HTML, CSS, Tailwind, Bootstrap |</p>
+            <div class="wrapper">
+                <div class="progress-bar">
+                    <span class="progress-bar-fill" style="width: 95%;"></span>
+                </div>
+            </div>
+        </div>
+        <div class="skill-with-bar">
+            <p>- JavaScript, React |</p>
+            <div class="wrapper">
+                <div class="progress-bar">
+                    <span class="progress-bar-fill" style="width: 85%;"></span>
+                </div>
+            </div>
+        </div>
+        <div class="skill-with-bar">
+            <p>- Node.js ,Express.js, MongoDB, Firebase |</p>
+            <div class="wrapper">
+                <div class="progress-bar">
+                    <span class="progress-bar-fill" style="width: 75%;"></span>
+                </div>
+            </div>
+        </div>
+        <div class="skill-with-bar">
+        <p>- PhotoShop, Github, Figma |</p>
+            <div class="wrapper">
+                <div class="progress-bar">
+                    <span class="progress-bar-fill" style="width: 85%;"></span>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 </div>`;
@@ -123,6 +174,7 @@ const home = document.querySelector("#home");
 const about = document.querySelector("#about");
 const work = document.querySelector("#work");
 const skills = document.querySelector("#skills");
+const contact = document.querySelector("#contact");
 let contentBox = document.querySelector(".content-wrapper");
 let enter = document.querySelector(".preloader-wrapper");
 
@@ -157,6 +209,13 @@ document.addEventListener("DOMContentLoaded", () => {
             opacity: 0
         })
         .from("#skills", 0.3, {
+            y: 400,
+            fontSize: 250
+        })
+        .from("#contact", 0.1, {
+            opacity: 0
+        })
+        .from("#contact", 0.3, {
             y: 400,
             fontSize: 250
         })
@@ -198,6 +257,39 @@ document.addEventListener("DOMContentLoaded", () => {
         contentBox.innerHTML = aboutContent;
         let openAbout = new TimelineMax({});
         openAbout
+            .from(".about-section", 1, {
+                opacity: 0,
+                x: 300
+            })
+            .from(
+                ".about-title h1",
+                0.1,
+                {
+                    opacity: 0
+                },
+                "ww"
+            )
+            .from(".about-title h1", 0.1, {
+                opacity: 1
+            })
+            .from(".about-title h1", 0.1, {
+                opacity: 0
+            })
+            .from(".about-title h1", 0.1, {
+                opacity: 1
+            })
+            .from(".about-title h1", 0.1, {
+                opacity: 0
+            })
+            .from(".about-text p", 0.2, {
+                opacity: 0
+            });
+    });
+    contact.addEventListener("click", () => {
+        contentBox.innerHTML = "";
+        contentBox.innerHTML = contactContent;
+        let openContact = new TimelineMax({});
+        openContact
             .from(".about-section", 1, {
                 opacity: 0,
                 x: 300
