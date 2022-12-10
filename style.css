@@ -484,16 +484,13 @@ a {
 }
 
 .center button {
+    font-size: 1.2em;
     width: 65%;
     background: var(--y-selected-text);
     color: #fff;
     border: #fff;
-    padding: 20px 10px;
+    padding: 10px;
     border-radius: 10px;
-}
-
-.center button {
-    background: var(--y-selected-text);
 }
 
 

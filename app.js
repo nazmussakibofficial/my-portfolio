@@ -38,7 +38,7 @@ let contactContent = `<section class="about-wrapper">
       <h1>Contact Me</h1>
     </div>
     <div class="center">
-        <h1>Social Links : <a target="_blank" href="https://www.linkedin.com/in/nazmus-sakib-b71682234/"><i style="color: #c02942;" class="fa-brands fa-linkedin"></i></a></h1>
+        <h1>Other Links : <a target="_blank" href="https://www.linkedin.com/in/nazmus-sakib-b71682234/"><i style="color: #c02942;" class="fa-brands fa-linkedin"></i></a> | <a target="_blank" href="https://github.com/nazmussakibofficial"><i style="color: #c02942;" class="fa-brands fa-square-github"></i></a></h1>
         <h1>Send me a message</h1>
         <form action="https://formsubmit.co/nazmussakibofficial19@gmail.com" method="POST">
             <input type="hidden" name="_subject" value="New Email from your portfolio!">
