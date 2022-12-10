@@ -5,7 +5,7 @@ let homeContent = `<div class="content-wrapper">
             <h1 class="t1"> <span>HI,</span> </h1>
             <h1 class="t2"> My Name is <span>Nazmus Sakib</span> </h1>
             <h1 class="t3"> I am a <span>Front End Developer</span> </h1>
-            <p>My resume: <a target="_blank" href="https://drive.google.com/file/d/1QLEWyiIBUlX9-OU8ZkEM_vLCDhDbPcWf/view?usp=sharing"><span><i class="fa-solid fa-id-badge"></i></span></a></p>
+            <p>My resume: <a target="_blank" href=" https://drive.google.com/uc?id=1QLEWyiIBUlX9-OU8ZkEM_vLCDhDbPcWf&export=download"><span><i class="fa-solid fa-id-badge"></i></span></a></p>
         </div>
 
     </div>
